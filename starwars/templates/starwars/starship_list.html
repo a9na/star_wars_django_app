@@ -1,0 +1,10 @@
+{% extends 'starwars/base.html' %}
+
+{% block content %}
+<h2>Starships</h2>
+<ul>
+    {% for starship in starships %}
+    <li>{{ starship.name }} - Model: {{ starship.model }} ({{ starship.manufacturer }})</li>
+    {% endfor %}
+</ul>
+{% endblock %}
