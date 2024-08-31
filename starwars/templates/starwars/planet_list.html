@@ -1,0 +1,10 @@
+{% extends 'starwars/base.html' %}
+
+{% block content %}
+<h2>Planets</h2>
+<ul>
+    {% for planet in planets %}
+    <li>{{ planet.name }} - Population: {{ planet.population }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
